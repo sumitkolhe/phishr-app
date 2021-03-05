@@ -1,8 +1,4 @@
-/*Author: Abdukl Ghani
- * Website: https://abdulghani.tech
- * Github Repo: https://github.com/abdulghanitech/rpad-ml
- * */
-package com.techglows.rpadml;
+package com.sumitkolhe.phishr;
 
 import android.accessibilityservice.AccessibilityService;
 import android.accessibilityservice.AccessibilityServiceInfo;
@@ -25,7 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     public boolean enabled;
-    private static final String TAG = "RPAD_MainActivity";
+    private static final String TAG = "PHISHR_MainActivity";
     public Button btn;
     public TextView status;
     public final static int REQUEST_CODE = 676;
@@ -60,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         if(enabled = isAccessibilityServiceEnabled(getApplicationContext(), MyAccessibilityService.class)){
             //Enabled
             btn.setText("Disable");
-            btn.setBackground(getResources().getDrawable(R.drawable.redgradient));
+           // btn.setBackground(getResources().getDrawable(R.drawable.redgradient));
             status.setText("You're Protected!");
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(this)) {
@@ -71,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             //disabled
             //show Enable btn
             btn.setText("Enable");
-            btn.setBackground(getResources().getDrawable(R.drawable.gradient1));
+            //btn.setBackground(getResources().getDrawable(R.drawable.gradient1));
             status.setText("You're NOT Protected!");
         }
     }

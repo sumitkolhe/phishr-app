@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_close_btn" />
-                            <entry key="sourceFile" value="C:\Users\hacke" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_bxs_shield_x" />
+                            <entry key="sourceFile" value="C:\Users\Sumit\Downloads\bxs-shield-x.svg" />
                           </map>
                         </option>
                       </PersistentState>

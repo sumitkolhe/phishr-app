@@ -14,7 +14,7 @@
     </style>
 
     <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">@drawable/gradient1</item>
+        <item name="android:background">#41c300</item>
     </style>
 
 </resources>

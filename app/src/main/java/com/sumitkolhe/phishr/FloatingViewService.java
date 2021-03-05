@@ -1,9 +1,4 @@
-/*Author: Abdukl Ghani
-* Website: https://abdulghani.tech
-* Github Repo: https://github.com/abdulghanitech/rpad-ml
-* */
-
-package com.techglows.rpadml;
+package com.sumitkolhe.phishr;
 
 import android.app.Service;
 import android.content.Intent;

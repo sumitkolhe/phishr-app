@@ -1,8 +1,4 @@
-/*Author: Abdukl Ghani
- * Website: https://abdulghani.tech
- * Github Repo: https://github.com/abdulghanitech/rpad-ml
- * */
-package com.techglows.rpadml;
+package com.sumitkolhe.phishr;
 
 import android.accessibilityservice.AccessibilityService;
 import android.content.Intent;
@@ -12,7 +8,6 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -20,7 +15,6 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
@@ -35,14 +29,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
 public class MyAccessibilityService extends AccessibilityService {
 
-    private static final String TAG = "RPADML_AccessServ";
+    private static final String TAG = "PHISHR_AccessServ";
     private String currentURL = "";
     private String GoogleApiURL = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyDVhCTR3IWUfteUGVugMEepE235_50TlLY";
-    private String ML_URL = "https://rpadml.herokuapp.com/api";
+    private String ML_URL = "https://phishr.herokuapp.com/api";
 
     public RequestQueue queue;
     public boolean networkInit;
@@ -279,7 +271,7 @@ public class MyAccessibilityService extends AccessibilityService {
             String afterDecode = URLDecoder.decode(url, "UTF-8");
             Uri uri = Uri.parse(afterDecode);
             mainLink = uri.getQueryParameter("u");
-            Log.d(TAG, "got intagram main link: "+mainLink);
+            Log.d(TAG, "got instagram main link: "+mainLink);
         }catch(UnsupportedEncodingException unsupp){
             Log.d(TAG, unsupp.toString());
         }
@@ -302,7 +294,7 @@ public class MyAccessibilityService extends AccessibilityService {
         //client
         JSONObject clientObject = new JSONObject();
         JSONObject clientJson = new JSONObject();
-        clientJson.put("clientId", "RPADML");
+        clientJson.put("clientId", "PHISHR");
         clientJson.put("clientVersion", "1.5.2");
         //clientObject.put("client", clientJson);
 

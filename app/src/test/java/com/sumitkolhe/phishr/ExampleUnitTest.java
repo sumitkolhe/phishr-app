@@ -1,4 +1,4 @@
-package com.techglows.rpadml;
+package com.sumitkolhe.phishr;
 
 import org.junit.Test;
 

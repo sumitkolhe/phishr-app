@@ -1,4 +1,4 @@
-package com.techglows.rpadml;
+package com.sumitkolhe.phishr;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
